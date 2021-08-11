@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="60dp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/activity_view_bind_sample_et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入用户名"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/activity_view_bind_sample_et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入密码"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登陆"
+        android:layout_marginTop="50dp"
+        android:onClick="onLogin"
+        />
+
+    <EditText android:id="@+id/user_bio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:viewBindingType="Button" />
+</LinearLayout>
